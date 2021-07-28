@@ -1,0 +1,32 @@
+{
+  "pipeline": {
+    "name": "get_beatAML"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/beatAML/PharmacoSet.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "2G"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/beatAML.git",
+          "name": "",
+          "branch": "main"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "beatAML_raw",
+          "glob": "/"
+        }
+      }
+    ]
+  }
+}
