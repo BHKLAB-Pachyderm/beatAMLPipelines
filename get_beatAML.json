@@ -3,7 +3,7 @@
     "name": "get_beatAML"
   },
   "transform": {
-    "image": "bhklab/pharmacogx:v3",
+    "image": "bhklab/pharmacogx:v2",
     "cmd": [
       "Rscript", 
       "/pfs/beatAML/PharmacoSet.R"]
