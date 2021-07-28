@@ -10,7 +10,7 @@
     },
   
   "resource_requests": {
-    "memory": "2G"
+    "memory": "8G"
   },
   "input": {
     "cross": [
