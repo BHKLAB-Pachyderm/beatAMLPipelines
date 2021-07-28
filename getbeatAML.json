@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "get_beatAML"
+    "name": "getbeatAML"
   },
   "transform": {
     "image": "bhklab/pharmacogx2.0:v3",
